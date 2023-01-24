@@ -6,10 +6,497 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task for Frontend UI</title>
+
+    <link rel="stylesheet" href="./dist/css/index.css">
+
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- slick css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
 
+    <!-- social media -->
+    <div class="social__media">
+        <div class="wrapper">
+            <div class="social__media-menu">
+                <div class="social__media-menu-icon">
+                    <a href="">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+
+                <div class="social__media-menu-icon">
+                    <a href="">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- header section -->
+    <header class="header">
+        <div class="wrapper">
+            <nav class="header__nav">
+                <div class="header__nav-logo">
+                    <a href="">
+                        company
+                        <span>
+                            name
+                        </span>
+                    </a>
+                </div>
+
+                <ul class="header__nav-menu">
+                    <li>
+                        <a href="" class="nav__link">founders</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav__link">beneficiaries</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav__link">scholarships</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav__link">press</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav__link">blog</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav__link">contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- hero section -->
+    <section class="hero__section">
+        <div class="wrapper">
+            <div class="hero__section-content">
+                <div class="hero__section-content-title">
+                    <h1>
+                        Ullamcorper diam turpis egestas egestas fames enim risus sed proin
+                    </h1>
+                </div>
+
+                <a href="" class="read__more">
+                    <p>
+                        <span class="text">
+                            read more
+                        </span>
+                        <span class="icon">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </span>
+                    </p>
+                </a>
+            </div>
+        </div>
+
+        <div class="hero__section-img">
+            <img src="./dist/images/img1.jpg" alt="">
+        </div>
+    </section>
+
+    <!-- latest news -->
+    <section class="latest__news">
+        <div class="wrapper">
+            <div class="latest__news-grid">
+                <div class="grid__box">
+                    <h2 class="section__title">
+                        latest news
+                    </h2>
+                </div>
+
+                <div class="grid__box">
+                    <a href="" class="view__all">
+                        <span>
+                            See all news
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="grid__box">
+                    <div class="grid__box-img">
+                        <img src="./dist/images/img2.jpg" alt="">
+                    </div>
+
+                    <div class="grid__box-content">
+                        <p class="date">
+                            <span>
+                                november
+                            </span>
+                            2020
+                        </p>
+
+                        <h3 class="content__title">
+                            Molestie molesti metus, tempus in commodo, semper tellus
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="grid__box">
+                    <div class="grid__box-img">
+                        <img src="./dist/images/img3.jpg" alt="">
+                    </div>
+
+                    <div class="grid__box-content">
+                        <p class="date">
+                            <span>
+                                november
+                            </span>
+                            2020
+                        </p>
+
+                        <h3 class="content__title">
+                            Molestie molesti metus, tempus in commodo, semper tellus
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="grid__box">
+                    <div class="grid__box-img">
+                        <img src="./dist/images/img4.jpg" alt="">
+                    </div>
+
+                    <div class="grid__box-content">
+                        <p class="date">
+                            <span>
+                                november
+                            </span>
+                            2020
+                        </p>
+
+                        <h3 class="content__title">
+                            In faucibus suspendisse magna massa nibh elementum augue phasellus tristique senectus urna
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="grid__box">
+                    <div class="grid__box-img">
+                        <img src="./dist/images/img5.jpg" alt="">
+                    </div>
+
+                    <div class="grid__box-content">
+                        <p class="date">
+                            <span>
+                                november
+                            </span>
+                            2020
+                        </p>
+
+                        <h3 class="content__title">
+                            Feugiat mollis quam sollicitudin egestas adipiscing amet
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- our mission -->
+    <section class="our__mission">
+        <div class="our__mission-hero secondaryBg">
+            <h2 class="section__title">
+                our mission
+            </h2>
+
+            <div class="hero__text">
+                <h3 class="hero__title">
+                    Imperdiet quis leo scelerisque nunc magna mattis vitae non non
+                </h3>
+
+                <p class="hero__desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                </p>
+            </div>
+        </div>
+
+        <div class="our__mission-img">
+            <img src="./dist/images/img6.jpg" alt="">
+        </div>
+    </section>
+
+    <!-- beneficiary -->
+    <section class="beneficiary">
+        <h2 class="section__title">
+            beneficiaries
+        </h2>
+
+        <div class="slider__grid slickSlider">
+            <div class="slider__box">
+                <div class="slider__box-img">
+                    <img src="./dist/images/img1.jpg" alt="">
+                </div>
+
+                <div class="slider__box-content">
+                    <h3 class="content__title">
+                        Morbi magna turpis dolor adipiscing
+                    </h3>
+                </div>
+            </div>
+
+            <div class="slider__box">
+                <div class="slider__box-img">
+                    <img src="./dist/images/img2.jpg" alt="">
+                </div>
+
+                <div class="slider__box-content">
+                    <h3 class="content__title">
+                        Curabitur cursus bibendum mauris placerat
+                    </h3>
+                </div>
+            </div>
+
+            <div class="slider__box">
+                <div class="slider__box-img">
+                    <img src="./dist/images/img3.jpg" alt="">
+                </div>
+
+                <div class="slider__box-content">
+                    <h3 class="content__title">
+                        Sagittis quam nunc platea est
+                    </h3>
+                </div>
+            </div>
+
+            <div class="slider__box">
+                <div class="slider__box-img">
+                    <img src="./dist/images/img4.jpg" alt="">
+                </div>
+
+                <div class="slider__box-content">
+                    <h3 class="content__title">
+                        Nisi, sed dui, ac enim
+                    </h3>
+                </div>
+            </div>
+
+            <div class="slider__box">
+                <div class="slider__box-img">
+                    <img src="./dist/images/img5.jpg" alt="">
+                </div>
+
+                <div class="slider__box-content">
+                    <h3 class="content__title">
+                        Vitae sodales sit id ullamcorper
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- founder -->
+    <section class="founder">
+        <div class="wrapper">
+            <h2 class="section__title">
+                founder
+            </h2>
+        </div>
+
+        <div class="founder__img">
+            <img src="./dist/images/founder.jpg" alt="">
+
+            <div class="img__overlay">
+                <h3 class="overlay__title">Maria Kenter</h3>
+                <h3 class="overlay__title">Roger Septimus</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- gallery -->
+    <section class="gallery">
+        <div class="wrapper">
+            <div class="gallery__grid">
+                <div class="grid__box">
+                    <h2 class="section__title">
+                        gallery
+                    </h2>
+                </div>
+
+                <div class="grid__box">
+                    <div class="grid__box-img">
+                        <figure>
+                            <img src="./dist/images/img7.jpg" alt="">
+
+                            <figcaption>Caption lorem ipsum dolor sit amet</figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="grid__box">
+                    <div class="grid__box-img">
+                        <figure>
+                            <img src="./dist/images/img2.jpg" alt="">
+
+                            <figcaption>Caption lorem ipsum dolor sit amet</figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="grid__box">
+                    <div class="grid__box-img">
+                        <figure>
+                            <img src="./dist/images/img3.jpg" alt="">
+
+                            <figcaption>Caption lorem ipsum dolor sit amet</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="wrapper">
+            <nav class="footer__nav">
+                <div class="header__nav-logo">
+                    <a href="">
+                        company
+                        <span>
+                            name
+                        </span>
+                    </a>
+                </div>
+
+                <div class="footer__nav-menu">
+                    <ul>
+                        <li>
+                            <a href="" class="nav__link">founders</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav__link">beneficiaries</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav__link">scholarships</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav__link">press</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav__link">blog</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav__link">contact</a>
+                        </li>
+                    </ul>
+
+                    <div class="social__media-menu">
+                        <div class="social__media-menu-icon">
+                            <a href="">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </div>
+
+                        <div class="social__media-menu-icon">
+                            <a href="">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="footer__content">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="">privacy policy</a>
+                        </li>
+
+                        <li>
+                            <a href="">terms & conditions</a>
+                        </li>
+                    </ul>
+
+                    <p class="copyright__desc">
+                        @2021 Company Name. All right reserved.
+                    </p>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- popperjs -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+
+    <!-- bootstrap cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+
+    <!-- font awesome cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
+        integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- slick js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $(function () {
+            $(".slickSlider").slick({
+                infinite: true,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                prevArrow: ".arrow_vertical-prev1",
+                nextArrow: ".arrow_vertical-next1",
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                        },
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2,
+                        },
+                    },
+                    {
+                        breakpoint: 550,
+                        settings: {
+                            slidesToShow: 1,
+                        },
+                    },
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ],
+            });
+        })
+
+    </script>
 </body>
 
 </html>

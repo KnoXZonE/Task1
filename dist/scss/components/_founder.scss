@@ -1,0 +1,45 @@
+.founder {
+  position: relative;
+  width: 100%;
+  padding: 5rem 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 450px;
+    background: var(--primary-bg);
+    z-index: -1;
+  }
+
+  .section__title {
+    color: var(--white-color);
+    margin-left: 6rem;
+  }
+
+  &__img {
+    max-width: 1800px;
+    margin: auto;
+    margin-top: 3rem;
+    position: relative;
+
+    .img__overlay {
+      position: absolute;
+      bottom: 4rem;
+      left: 4rem;
+
+      .overlay__title {
+        padding: 1rem 0;
+        color: var(--white-color);
+        font-size: 44px;
+        font-weight: 400;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid rgba(225, 225, 225, 0.3);
+        }
+      }
+    }
+  }
+}
