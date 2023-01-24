@@ -1,0 +1,12 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+:root {
+  --primary-bg: #003a92;
+  --secondary-bg: #8c2531;
+  --optional-bg: #f2efee;
+  --dark-color: #3c3c3c;
+  --light-color: #c4c4c4;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --hero-font: ;
+  --normal-font: "Inter", sans-serif;
+}
