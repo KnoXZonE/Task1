@@ -11,6 +11,7 @@ body {
   width: 100%;
   min-height: 100vh;
   background-color: var(--optional-bg) !important;
+  overflow-x: hidden;
 }
 
 a,
@@ -48,6 +49,14 @@ ul {
   @media (max-width: 1800px) {
     max-width: 98%;
   }
+
+  @media (max-width: 992px) {
+    padding: 0 30px;
+  }
+
+  @media (max-width: 650px) {
+    padding: 0 10px;
+  }
 }
 
 .section__title {
@@ -61,4 +70,10 @@ ul {
 
 .secondaryBg {
   background: var(--secondary-bg);
+}
+
+.content__title {
+  font-family: Galaxie;
+  font-weight: 400;
+  color: var(--dark-color);
 }

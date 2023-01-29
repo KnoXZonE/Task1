@@ -9,13 +9,29 @@
     justify-content: space-between;
     align-items: center;
 
+    @media (max-width: 992px) {
+      padding: 30px 0 30px 30px;
+    }
+
+    @media (max-width: 650px) {
+      padding: 10px 0 10px 10px;
+    }
+
     &-menu {
       display: flex;
       align-items: center;
 
+      @media (max-width: 992px) {
+        display: none;
+      }
+
       li {
         &:not(:last-child) {
           margin-right: 4rem;
+
+          @media (max-width: 1336px) {
+            margin-right: 2rem;
+          }
         }
 
         .nav__link {
@@ -63,6 +79,7 @@
     color: var(--primary-bg);
     font-weight: bold;
     font-size: 24px;
+    font-family: Galaxie;
 
     &:hover {
       color: var(--primary-bg);
@@ -79,6 +96,7 @@
     }
 
     span {
+      font-family: Galaxie;
       position: relative;
       font-size: 20px;
 
