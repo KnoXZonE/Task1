@@ -2,6 +2,49 @@
   width: 100%;
   background: linear-gradient(90deg, transparent, var(--white-color));
 
+  &.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--primary-bg);
+    width: 100%;
+    z-index: 10000;
+    transition: all 300ms ease-in-out;
+
+    .header__nav {
+      padding: 1rem;
+      background: var(--primary-bg);
+    }
+
+    .header__nav-logo {
+      a {
+        color: white;
+
+        span {
+          &::before,
+          &::after {
+            background: white;
+          }
+        }
+      }
+    }
+
+    .header__nav-menu {
+      li {
+        a {
+          color: white;
+        }
+      }
+    }
+
+    .hamburger {
+      &::before,
+      &::after {
+        background: white;
+      }
+    }
+  }
+
   &__nav {
     background: var(--white-color);
     padding: 5rem 0 5rem 4rem;
@@ -32,6 +75,10 @@
           @media (max-width: 1336px) {
             margin-right: 2rem;
           }
+
+          @media (max-width: 992px) {
+            margin-right: 0;
+          }
         }
 
         .nav__link {
@@ -42,6 +89,10 @@
           text-transform: capitalize;
           letter-spacing: 0.5px;
           transition: all 300ms ease-in-out;
+
+          @media (max-width: 992px) {
+            color: white;
+          }
 
           &::before {
             content: "";
@@ -64,6 +115,83 @@
               opacity: 1;
             }
           }
+        }
+      }
+    }
+  }
+
+  .drawer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    background: var(--primary-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    grid-gap: 1rem;
+    padding: 2rem !important;
+    overflow-y: auto;
+    overflow-x: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-100%);
+    transition: all 300ms ease-in-out;
+
+    &.active {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(0);
+    }
+
+    @media (max-width: 550px) {
+      padding: 2rem 1rem !important;
+    }
+
+    &__head {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem 0 4rem 0;
+      border-bottom: 1px solid #c4c4c4;
+
+      .header__nav-logo {
+        a {
+          color: white;
+
+          span {
+            &::before,
+            &::after {
+              background: white;
+            }
+          }
+        }
+      }
+
+      .drawer-closer {
+        border: 0;
+        background: transparent;
+        color: white;
+        font-size: 22px;
+      }
+    }
+
+    &-menu {
+      display: flex;
+      flex-direction: column;
+      grid-gap: 2rem;
+      padding: 2rem;
+
+      li {
+        a {
+          color: white;
+          text-transform: capitalize;
+          font-size: 16px;
+          letter-spacing: 0.5px;
+          transition: all 300ms ease-in-out;
         }
       }
     }
@@ -123,6 +251,65 @@
         background: var(--primary-bg);
         transition: all 300ms var(--transition-cubic);
       }
+    }
+  }
+}
+
+.hamburger {
+  min-width: 1.5rem;
+  height: 1.5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  background: transparent;
+  display: none;
+
+  @media (max-width: 992px) {
+    display: flex;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 1.5rem;
+    height: 2px;
+    background: black;
+    transition: top 0.2s ease-in-out 0.4s, transform 0.4s ease-in-out;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 35%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 1.5rem;
+    height: 2px;
+    background: black;
+    transition: top 0.2s ease-in-out 0.4s, transform 0.4s ease-in-out;
+  }
+
+  &.active {
+    &::before {
+      transform: rotate(45deg);
+      top: 50%;
+      background: white;
+      transition: top 0.2s ease-in-out, transform 0.4s ease-in-out 0.2s;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+      top: 50%;
+      background: white;
+      transition: top 0.2s ease-in-out, transform 0.4s ease-in-out 0.2s;
     }
   }
 }

@@ -64,3 +64,59 @@ $(function () {
     ],
   });
 });
+
+const imgs = document.querySelectorAll(".overlay__title a");
+const previewImg = document.querySelector(".preview__img img");
+
+previewImg.src = imgs[0].src;
+
+imgs.forEach((img) => {
+  img.addEventListener("click", (e) => {
+    e.preventDefault;
+
+    console.log();
+
+    previewImg = img.src;
+  });
+});
+
+// mobile menu toggler
+const hamburger = document.querySelector(".hamburger");
+const drawer = document.querySelector(".drawer");
+const drawerCloser = document.querySelector(".drawer-closer");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+
+  if (drawer.classList.contains("active")) {
+    drawer.classList.remove("active");
+  } else {
+    drawer.classList.add("active");
+  }
+});
+
+drawerCloser.addEventListener("click", () => {
+  hamburger.classList.remove("active");
+  drawer.classList.remove("active");
+});
+
+// scroll to top animation
+window.onscroll = function () {
+  scrollToTopReveal();
+};
+
+var bottomHeight = document.documentElement.clientHeight;
+console.log(bottomHeight);
+
+function scrollToTopReveal() {
+  const header = document.querySelector(".header");
+
+  if (
+    document.body.scrollTop > bottomHeight ||
+    document.documentElement.scrollTop > 0
+  ) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
