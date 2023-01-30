@@ -1118,6 +1118,11 @@ ul {
   width: 100%;
   padding: 5rem 0;
 }
+@media (max-width: 768px) {
+  .founder {
+    padding: 30px 0;
+  }
+}
 .founder::before {
   content: "";
   position: absolute;
@@ -1141,6 +1146,11 @@ ul {
     padding: 0 30px;
   }
 }
+@media (max-width: 768px) {
+  .founder .wrapper {
+    padding: 0 10px;
+  }
+}
 .founder .section__title {
   color: var(--white-color);
 }
@@ -1150,14 +1160,56 @@ ul {
   margin-top: 3rem;
   position: relative;
 }
+@media (max-width: 768px) {
+  .founder__img {
+    margin-top: 0rem;
+  }
+}
 .founder__img .preview__img img {
   width: 100%;
-  height: auto;
+  height: 650px;
+  transition: all 300ms ease-in-out;
+}
+@media (max-width: 1336px) {
+  .founder__img .preview__img img {
+    height: 500px;
+  }
+}
+@media (max-width: 768px) {
+  .founder__img .preview__img img {
+    height: 400px;
+  }
+}
+@media (max-width: 600px) {
+  .founder__img .preview__img img {
+    height: 350px;
+  }
+}
+@media (max-width: 500px) {
+  .founder__img .preview__img img {
+    height: 300px;
+  }
+}
+@media (max-width: 400px) {
+  .founder__img .preview__img img {
+    height: 250px;
+  }
+}
+@media (max-width: 380px) {
+  .founder__img .preview__img img {
+    height: 200px;
+  }
 }
 .founder__img .img__overlay {
   position: absolute;
   bottom: 4rem;
   left: 4rem;
+}
+@media (max-width: 1280px) {
+  .founder__img .img__overlay {
+    left: 1rem;
+    bottom: 1rem;
+  }
 }
 .founder__img .img__overlay .overlay__title {
   padding: 1rem 0;
@@ -1166,6 +1218,26 @@ ul {
   font-weight: 400;
   font-family: Galaxie;
   letter-spacing: 0.5px;
+  transition: all 300ms ease-in-out;
+}
+@media (max-width: 1280px) {
+  .founder__img .img__overlay .overlay__title {
+    font-size: 34px;
+    padding: 0.5rem 0;
+  }
+}
+@media (max-width: 650px) {
+  .founder__img .img__overlay .overlay__title {
+    font-size: 28px;
+  }
+}
+@media (max-width: 550px) {
+  .founder__img .img__overlay .overlay__title {
+    font-size: 24px;
+  }
+}
+.founder__img .img__overlay .overlay__title.active {
+  color: var(--primary-bg);
 }
 .founder__img .img__overlay .overlay__title:not(:last-child) {
   border-bottom: 1px solid rgba(225, 225, 225, 0.3);
