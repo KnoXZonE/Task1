@@ -3,6 +3,10 @@
   width: 100%;
   padding: 5rem 0;
 
+  @media (max-width: 768px) {
+    padding: 30px 0;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -24,6 +28,10 @@
     @media (max-width: 992px) {
       padding: 0 30px;
     }
+
+    @media (max-width: 768px) {
+      padding: 0 10px;
+    }
   }
 
   .section__title {
@@ -36,10 +44,39 @@
     margin-top: 3rem;
     position: relative;
 
+    @media (max-width: 768px) {
+      margin-top: 0rem;
+    }
+
     .preview__img {
       img {
         width: 100%;
-        height: auto;
+        height: 650px;
+        transition: all 300ms ease-in-out;
+
+        @media (max-width: 1336px) {
+          height: 500px;
+        }
+
+        @media (max-width: 768px) {
+          height: 400px;
+        }
+
+        @media (max-width: 600px) {
+          height: 350px;
+        }
+
+        @media (max-width: 500px) {
+          height: 300px;
+        }
+
+        @media (max-width: 400px) {
+          height: 250px;
+        }
+
+        @media (max-width: 380px) {
+          height: 200px;
+        }
       }
     }
 
@@ -48,6 +85,11 @@
       bottom: 4rem;
       left: 4rem;
 
+      @media (max-width: 1280px) {
+        left: 1rem;
+        bottom: 1rem;
+      }
+
       .overlay__title {
         padding: 1rem 0;
         color: var(--white-color);
@@ -55,6 +97,24 @@
         font-weight: 400;
         font-family: Galaxie;
         letter-spacing: 0.5px;
+        transition: all 300ms ease-in-out;
+
+        @media (max-width: 1280px) {
+          font-size: 34px;
+          padding: 0.5rem 0;
+        }
+
+        @media (max-width: 650px) {
+          font-size: 28px;
+        }
+
+        @media (max-width: 550px) {
+          font-size: 24px;
+        }
+
+        &.active {
+          color: var(--primary-bg);
+        }
 
         &:not(:last-child) {
           border-bottom: 1px solid rgba(225, 225, 225, 0.3);
